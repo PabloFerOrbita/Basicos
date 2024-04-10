@@ -12,5 +12,8 @@ for($i = 0; $i < 100; $i++){
 }
 echo $valorMul . '<br>';
 $valorRaiz = sqrt($valorMul);
-echo number_format($valorRaiz, 0);
+echo number_format($valorRaiz, 0) . '<br>';
+$valorString = strval($valorRaiz);
+$valorString = substr($valorString, 0 , -2) . 'code' . substr($valorString, -2);
+echo $valorString;
 ?>
