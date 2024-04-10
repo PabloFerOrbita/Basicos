@@ -8,7 +8,10 @@ if (strpos($algas, "anacardo") !== false){
 }else{
     echo 'false' . "<br>";
 }
-echo strrev($algas) . '<br>';
+$algasRevertida = explode(' ', $algas);
+$algasRevertida = array_reverse($algasRevertida);
+$algasRevertida = join(' ', $algasRevertida);
+echo $algasRevertida . '<br>';
 echo substr_count($algas, 'e');
 
 ?>
