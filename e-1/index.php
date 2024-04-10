@@ -12,6 +12,8 @@ $algasRevertida = explode(' ', $algas);
 $algasRevertida = array_reverse($algasRevertida);
 $algasRevertida = join(' ', $algasRevertida);
 echo $algasRevertida . '<br>';
-echo substr_count($algas, 'e');
+$algasArray = str_split($algas);
+$numeroE = array_count_values($algasArray);
+echo $numeroE['e'];
 
 ?>
