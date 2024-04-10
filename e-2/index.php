@@ -5,4 +5,6 @@ if(15 % 3 == 0){
 }else {
     echo 'false' . '<br>';
 }
+$valorMul = $valor * 21;
+echo $valorMul;
 ?>
