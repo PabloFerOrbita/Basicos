@@ -8,12 +8,12 @@ if(15 % 3 == 0){
 $valorMul = $valor * 21;
 echo $valorMul . '<br>';
 for($i = 0; $i < 100; $i++){
-    $valorMul = $valorMul + 1;
+    $valorMul += 1;
 }
 echo $valorMul . '<br>';
 $valorRaiz = sqrt($valorMul);
 echo number_format($valorRaiz, 0) . '<br>';
 $valorString = strval($valorRaiz);
-$valorString = substr($valorString, 0 , -2) . 'code' . substr($valorString, -2);
+$valorString = substr($valorString, 0 , -1) . 'code' . substr($valorString, -1);
 echo $valorString;
 ?>

@@ -7,7 +7,7 @@ $array = explode('-', $cadena);
 echo print_r($array, true) . '<br>';
 rsort($array);
 echo print_r($array, true) . '<br>';
-$arrayFiltrado = array_filter($array, function($v){ return !str_contains($v, 'a');});
+$arrayFiltrado = array_filter($array, function($v){ return strpos($v, 'a') === false;});
 echo print_r($arrayFiltrado, true) . '<br>';
 echo count($arrayFiltrado)
 ?>
