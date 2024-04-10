@@ -9,4 +9,5 @@ rsort($array);
 echo print_r($array, true) . '<br>';
 $arrayFiltrado = array_filter($array, function($v){ return !str_contains($v, 'a');});
 echo print_r($arrayFiltrado, true) . '<br>';
+echo count($arrayFiltrado)
 ?>
