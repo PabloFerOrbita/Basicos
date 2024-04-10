@@ -7,4 +7,8 @@ if(15 % 3 == 0){
 }
 $valorMul = $valor * 21;
 echo $valorMul;
+for($i = 0; $i < 100; $i++){
+    $valorMul = $valorMul + 1;
+}
+echo $valorMul;
 ?>
